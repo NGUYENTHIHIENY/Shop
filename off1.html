@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hien Y - Website selling clothes
+  </title>
+  <link rel="stylesheet" type="text/css" href="in.css">
+
+<body>
+        <h1>Home page</h1>
+        <p>Welcome to our website!</p>
+      </body>
+      
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="user-bar">
+          <a href="#"><i class="fa fa-user"></i> Log-in</a>
+          <<div class="login-form">
+            <h2>Log-in</h2>
+            <button onclick="showLoginForm()">Log-in</button>
+            <form id="loginForm" style="display: none;">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" required>
+          
+              <button type="submit">Password</button>
+            </form>
+          </div>
+          
+          <script>
+            function showLoginForm() {
+              var loginForm = document.getElementById('loginForm');
+              loginForm.style.display = 'block';
+            }
+          </script>
+          </script>
+          <a href="#"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu">
+      <div class="container">
+        <ul>
+          <li><a href="#" class="active">Trang chủ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <style>
+    .image-container {
+      margin-right: 20px;
+    }
+
+  .product {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+  }
+</style>
+
+  <div class="product-list">
+    <h2>List of products</h2>
+    <div class="product">
+      <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl1.jpg" alt="Product 1">
+      <p>Product 1</p>
+      <p>Name: Skirt</p>
+      <p>Price: 100,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+      <button onclick="addToCart('product1', 100000)">Add to cart</button>
+    </div>
+    <div class="product">
+      <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl2.jpg" alt="Product 2">
+      <p>Product 2</p>
+      <p>Name: Skirt</p>
+      <p>Price: 200,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+      <button onclick="addToCart('product2', 200000)">Add to cart</button>
+    </div>
+
+
+    <div class="product">
+        <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl3.jpg" alt="Product 3">
+        <p>Product 3</p>
+        <p>Name: Skirt</p>
+      <p>Price: 200,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+        <button onclick="addToCart('product3', 200000)">Add to cart</button>
+      </div>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl4.jpg" alt="Product 4">
+    <p>Product 4</p>
+    <p>Name: Clothes</p>
+      <p>Price: 300,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+    <button onclick="addToCart('product4', 300000)">Add to cart</button>
+</div>
+<div class="product">
+  <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl6.jpg" alt="Product 5">
+  <p>Product 5</p>
+  <p>Name: Skirt</p>
+      <p>Price: 600,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+  <button onclick="addToCart('product5', 600000)">Add to cart</button>
+</div>
+<div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl7.jpg" alt="Product 6">
+    <p>Product 6</p>
+    <p>Name: Skirt</p>
+      <p>Price: 150,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: Pink/Green</p>
+    <button onclick="addToCart('product6', 150000)">Add to cart</button>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl8.jpg" alt="Product 7">
+    <p>Product 7</p>
+    <p>Name: Croptop</p>
+      <p>Price: 50,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+    <button onclick="addToCart('product7', 50000)">Add to cart</button>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl9.jpg" alt="Product 8">
+    <p>Product 8</p>
+    <p>Name: Skirt</p>
+      <p>Price: 250,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+    <button onclick="addToCart('product8', 250000)">Add to cart</button>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\cl10.jpg" alt="Product 9">
+    <p>Product 9</p>
+    <p>Name: Clothes</p>
+      <p>Price: 300,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white-blue</p>
+    <button onclick="addToCart('product9', 300000)">Add to cart</button>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\image\cl11.jpg" alt="Product 10">
+    <p>Product 10</p>
+    <p>Name: uniform</p>
+      <p>Price: 500,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+    <button onclick="addToCart('product10', 500000)">Add to cart</button>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\image\cl14.jpg" alt="Product 11">
+    <p>Product 11</p>
+    <p>Name: Skirt</p>
+      <p>Price: 700,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+    <button onclick="addToCart('product11', 700000)">Add to cart</button>
+  </div>
+  <div class="product">
+    <img src="D:\SQL2022\RulesEng\resources\1033\image\image\image\cl16.jpg" alt="Product 12">
+    <p>Product 12</p>
+    <p>Name: Skirt</p>
+      <p>Price: 700,000 đ</p>
+      <p>Size: S-M-L</p>
+      <p>Color: white</p>
+    <button onclick="addToCart('product12', 700000)">Add to cart</button>
+  </div>
+  
+
+
+
+
+  <div class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="total-price">0</span> đ</p>
+  </div>
+
+
+
+<!-- Trang thanh toán -->
+<div id="payment-page" class="page">
+  <h1>PAYMENT</h1>
+  
+  <button onclick="showPaymentOptions()">Pay</button>
+  
+  <div id="payment-options" style="display: none;">
+    <label for="payment-method">Payment methods:</label>
+    <select id="payment-method" onchange="showBankInfo()">
+      <option value="cash">Payment on delivery</option>
+      <option value="ipay">Payment via Ipay</option>
+    </select>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="Enter the address"/>
+    
+    <div id="bank-info" style="display: none;">
+      <label for="bank-name">Bank name:</label>
+      <input type="text" id="bank-name" placeholder="Enter the bank name" />
+      
+      <label for="account-number">Account number:</label>
+      <input type="text" id="account-number" placeholder="Enter account number" />
+    </div>
+    
+    <label for="delivery-time">Delivery time:</label>
+    <select id="delivery-time">
+      <option value="">Select delivery time</option>
+      <option value="9:00">9:00</option>
+      <option value="11:00">11:00</option>
+      <option value="13:00">13:00</option>
+      <option value="15:00">15:00</option>
+      <option value="17:00">17:00</option>
+      <option value="19:00">19:00</option>
+    </select>
+    
+    <button onclick="checkout()">Save</button>
+  
+  </div>
+</div>
+
+  <!-- Thêm các liên kết điều hướng khác -->
+</div>
+  <script>
+    var cartItems = [];
+var totalPrice = 0;
+
+function addToCart(productId, price) {
+  // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng hay chưa
+  var existingItem = cartItems.find(item => item.productId === productId);
+  
+  if (existingItem) {
+    // Nếu sản phẩm đã tồn tại, tăng số lượng sản phẩm
+    existingItem.quantity++;
+  } else {
+    // Nếu sản phẩm chưa tồn tại, thêm mới sản phẩm vào giỏ hàng
+    cartItems.push({ productId, price, quantity: 1 });
+  }
+  
+  // Cập nhật tổng cộng
+  totalPrice += price;
+  
+  // Cập nhật giao diện giỏ hàng
+  updateCartUI();
+}
+
+function removeFromCart(productId, price) {
+  // Tìm kiếm sản phẩm trong giỏ hàng
+  var index = cartItems.findIndex(item => item.productId === productId);
+  
+  if (index !== -1) {
+    // Nếu sản phẩm tồn tại trong giỏ hàng, giảm số lượng sản phẩm
+    cartItems[index].quantity--;
+    
+    // Kiểm tra xem số lượng sản phẩm có bằng 0 hay không
+    if (cartItems[index].quantity === 0) {
+      // Nếu số lượng sản phẩm bằng 0, xóa sản phẩm khỏi giỏ hàng
+      cartItems.splice(index, 1);
+    }
+    
+    // Cập nhật tổng cộng
+    totalPrice -= price;
+    
+    // Cập nhật giao diện giỏ hàng
+    updateCartUI();
+  }
+}
+function checkout() {
+  var paymentMethod = document.getElementById("payment-method").value;
+  
+  if (paymentMethod === "cash") {
+    // Xử lý thanh toán khi nhận hàng
+    console.log("Thanh toán khi nhận hàng");
+  } else if (paymentMethod === "ipay") {
+    // Xử lý thanh toán qua Ipay
+    console.log("Thanh toán qua Ipay");
+  }
+  
+  // Các xử lý thanh toán khác
+  
+  // Ẩn trang thanh toán và hiển thị các trang khác
+}
+function showPaymentOptions() {
+  document.getElementById("payment-options").style.display = "block";
+}
+
+function checkout() {
+  var paymentMethod = document.getElementById("payment-method").value;
+  
+  if (paymentMethod === "cash") {
+    // Xử lý thanh toán khi nhận hàng
+    console.log("Thanh toán khi nhận hàng");
+  } else if (paymentMethod === "ipay") {
+    // Xử lý thanh toán qua Ipay
+    console.log("Thanh toán qua Ipay");
+  }
+  
+  function createInvoice() {
+  var invoiceContent = document.getElementById("invoice-content");
+  var paymentMethod = document.getElementById("payment-method").value;
+  var date = new Date().toLocaleDateString(); // Lấy ngày hiện tại
+  
+  // Tạo nội dung hoá đơn
+  var invoice = document.createElement("div");
+  invoiceContent.innerHTML = "<p>Phương thức thanh toán: " + paymentMethod + "</p>" +
+                              "<p>Ngày làm đơn: " + date + "</p>" +
+                              "<p>Tổng cộng: " + totalPrice + " đ</p>";
+  
+  // Hiển thị hoá đơn
+  invoiceContent.appendChild(invoice);
+}
+  // Tạo và hiển thị hoá đơn
+  
+  // Ẩn trang thanh toán và hiển thị trang hoá đơn
+
+  document.getElementById("invoice-page").style.display = "block";
+              
+}
+
+// Các hàm điều hướng và xử lý trang khác
+// Các hàm điều hướng và xử lý trang khác
+function showBankInfo() {
+  var paymentMethod = document.getElementById("payment-method").value;
+  var bankInfo = document.getElementById("bank-info");
+
+  if (paymentMethod === "ipay") {
+    bankInfo.style.display = "block";
+  } else {
+    bankInfo.style.display = "none";
+  }
+}
+
+function updateCartUI() {
+  var cartItemsElement = document.getElementById('cart-items');
+  var totalElement = document.getElementById('total-price');
+  
+  // Xóa các phần tử cũ trong giỏ hàng
+  cartItemsElement.innerHTML = '';
+  
+  // Tạo các phần tử mới cho giỏ hàng
+  cartItems.forEach(item => {
+    var li = document.createElement('li');
+    li.innerText = item.productId + ' x ' + item.quantity;
+    cartItemsElement.appendChild(li);
+  });
+  
+  // Cập nhật tổng cộng
+  totalElement.innerText = totalPrice;
+}
+
+  </script>
+  </section>
+
+  <!-- Các phần còn lại của trang web -->
+
+  <footer>
+    <div class="container">
+      <p>Hiền Ý &copy; 2024. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
